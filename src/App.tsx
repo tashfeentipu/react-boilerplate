@@ -1,10 +1,16 @@
 import './App.css';
+import Footer from "./Containers/Footer";
+import Header from "./Containers/Header";
+import { BrowserRouter } from "react-router-dom";
+import RoutesImport from "./Routes";
 
 function App() {
   return (
-    <div>
-      Welcome Tipu
-    </div>
+    <BrowserRouter>
+      <Header />
+      <RoutesImport />
+      <Footer />
+    </BrowserRouter>
   );
 }
 
