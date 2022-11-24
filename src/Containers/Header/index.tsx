@@ -1,5 +1,6 @@
 import { useState } from "react";
-import NavItem from "../../Components/NavItem";
+import NavItem from "Components/NavItem";
+import { Logo } from "Assets";
 
 interface IProps {
 
@@ -10,13 +11,16 @@ const Header = (props: IProps) => {
 
     return (
         <header className="header">
-            <nav>
-                <NavItem navItemName={"Item 1"} />
-                <NavItem navItemName={"Item 2"} />
-                <NavItem navItemName={"Item 3"} />
-                <NavItem navItemName={"Sign Up"} />
-                <NavItem navItemName={"Sign In"} />
-            </nav>
+            <div className="header__Logo">
+                <img src={Logo} />
+                <div className="header__Logo__Heading" >Electo </div>
+            </div>
+            <div className="header__container">
+                <button>
+                    Connect Wallet
+                </button>
+
+            </div>
         </header>
     );
 }

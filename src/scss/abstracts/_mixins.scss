@@ -10,6 +10,11 @@
     height: $height;
 }
 
+@mixin widthHeight($width, $height) {
+    height: $height;
+    width: $width;
+}
+
 @mixin align($flex, $justify-content, $align-items, $height) {
     display: $flex;
     align-items: $align-items;
